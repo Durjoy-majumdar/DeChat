@@ -1,0 +1,31 @@
+package gt0;
+
+import android.view.View;
+import com.tencent.p014mm.plugin.appbrand.widget.dialog.C84926a;
+import com.tencent.p014mm.sdk.platformtools.Log;
+import j20.C117292a;
+import java.util.ArrayList;
+
+/* renamed from: gt0.z */
+public class C45960z implements View.OnClickListener {
+
+    /* renamed from: d */
+    public final /* synthetic */ C84926a f123973d;
+
+    public C45960z(C84926a aVar) {
+        this.f123973d = aVar;
+    }
+
+    public void onClick(View view) {
+        ArrayList arrayList = new ArrayList();
+        arrayList.add(view);
+        Object[] array = arrayList.toArray();
+        arrayList.clear();
+        C117292a.m165356b("com/tencent/mm/plugin/appbrand/widget/dialog/AppBrandEvaluateDialogHelper$6", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V", this, array);
+        Log.m105924i("MicroMsg.AppBrand.Evaluate.AppBrandEvaluateDialogHelper", "user clicked dialog close button");
+        C84926a aVar = this.f123973d;
+        aVar.f247531b = false;
+        aVar.mo117754a();
+        C117292a.m165361g(this, "com/tencent/mm/plugin/appbrand/widget/dialog/AppBrandEvaluateDialogHelper$6", "android/view/View$OnClickListener", "onClick", "(Landroid/view/View;)V");
+    }
+}

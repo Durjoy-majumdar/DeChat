@@ -1,0 +1,15 @@
+package com.p012jg;
+
+/* renamed from: com.jg.EType */
+public enum EType {
+    ALL,
+    ACTIVITYCHECK,
+    PROVIDERCHECK,
+    RECEIVERCHECK,
+    SERVICESCHECK,
+    PERMISSIONCHECK,
+    INTENTCHECK,
+    SECURERANDOMCHECK,
+    JSEXECUTECHECK,
+    HTTPSCHECK
+}

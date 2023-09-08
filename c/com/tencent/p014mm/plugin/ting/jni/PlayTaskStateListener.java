@@ -1,0 +1,15 @@
+package com.tencent.p014mm.plugin.ting.jni;
+
+import kotlin.Metadata;
+
+@Metadata(mo182092bv = {}, mo182093d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0012\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001J\u0012\u0010\u0005\u001a\u00020\u00042\b\u0010\u0003\u001a\u0004\u0018\u00010\u0002H&J\u0010\u0010\b\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006H&J\u0010\u0010\n\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\u0006H&J\u0010\u0010\r\u001a\u00020\u00042\u0006\u0010\f\u001a\u00020\u000bH&¨\u0006\u000e"}, mo182094d2 = {"Lcom/tencent/mm/plugin/ting/jni/PlayTaskStateListener;", "", "Lcom/tencent/mm/plugin/ting/jni/PlayTaskService;", "service", "Lrx3/b0;", "onServiceChanged", "", "mode", "onPlayModeChanged", "index", "onPlayingIndexChanged", "", "item", "onPlayingItemUpdate", "aff-module_release"}, mo182095k = 1, mo182096mv = {1, 7, 1})
+/* renamed from: com.tencent.mm.plugin.ting.jni.PlayTaskStateListener */
+public interface PlayTaskStateListener {
+    void onPlayModeChanged(int i);
+
+    void onPlayingIndexChanged(int i);
+
+    void onPlayingItemUpdate(byte[] bArr);
+
+    void onServiceChanged(PlayTaskService playTaskService);
+}

@@ -1,0 +1,11 @@
+package com.tencent.p014mm.plugin.appbrand.jsapi.file;
+
+/* renamed from: com.tencent.mm.plugin.appbrand.jsapi.file.q */
+public class C82470q extends C82427f<C82480s1> {
+    private static final int CTRL_INDEX = 387;
+    private static final String NAME = "statSync";
+
+    public C82470q() {
+        super(new C82480s1());
+    }
+}

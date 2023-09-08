@@ -1,0 +1,80 @@
+package com.tencent.p014mm.autogen.mmdata.rpt;
+
+import com.tencent.midas.comm.log.util.APLogFileUtil;
+import com.tencent.xweb.file.XVFSFile;
+import kj2.C61103a;
+
+/* renamed from: com.tencent.mm.autogen.mmdata.rpt.SessionFlowSingleStatStruct */
+public final class SessionFlowSingleStatStruct extends C61103a {
+
+    /* renamed from: d */
+    public int f343821d = 0;
+
+    /* renamed from: e */
+    public String f343822e = "";
+
+    /* renamed from: f */
+    public long f343823f = 0;
+
+    /* renamed from: g */
+    public long f343824g = 0;
+
+    /* renamed from: h */
+    public long f343825h = 0;
+
+    /* renamed from: i */
+    public String f343826i = "";
+
+    /* renamed from: j */
+    public int mo1004j() {
+        return 16974;
+    }
+
+    /* renamed from: p */
+    public String mo1005p() {
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append(this.f343821d);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f343822e);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f343823f);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f343824g);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f343825h);
+        stringBuffer.append(",");
+        stringBuffer.append(this.f343826i);
+        String stringBuffer2 = stringBuffer.toString();
+        mo86044a(stringBuffer2);
+        return stringBuffer2;
+    }
+
+    /* renamed from: q */
+    public String mo1006q() {
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("PId");
+        stringBuffer.append(XVFSFile.PATH_SEPARATOR);
+        stringBuffer.append(this.f343821d);
+        stringBuffer.append(APLogFileUtil.SEPARATOR_LINE);
+        stringBuffer.append("PName");
+        stringBuffer.append(XVFSFile.PATH_SEPARATOR);
+        stringBuffer.append(this.f343822e);
+        stringBuffer.append(APLogFileUtil.SEPARATOR_LINE);
+        stringBuffer.append("Seq");
+        stringBuffer.append(XVFSFile.PATH_SEPARATOR);
+        stringBuffer.append(this.f343823f);
+        stringBuffer.append(APLogFileUtil.SEPARATOR_LINE);
+        stringBuffer.append("SubSeq");
+        stringBuffer.append(XVFSFile.PATH_SEPARATOR);
+        stringBuffer.append(this.f343824g);
+        stringBuffer.append(APLogFileUtil.SEPARATOR_LINE);
+        stringBuffer.append("SubSeqSum");
+        stringBuffer.append(XVFSFile.PATH_SEPARATOR);
+        stringBuffer.append(this.f343825h);
+        stringBuffer.append(APLogFileUtil.SEPARATOR_LINE);
+        stringBuffer.append("DataContent");
+        stringBuffer.append(XVFSFile.PATH_SEPARATOR);
+        stringBuffer.append(this.f343826i);
+        return stringBuffer.toString();
+    }
+}

@@ -1,0 +1,152 @@
+package te3;
+
+import if0.C46238a;
+import java.util.LinkedList;
+import pe3.C47465a;
+import u14.C52418a;
+import v14.C102122a;
+import z14.C53733a;
+
+/* renamed from: te3.fd2 */
+public class C64362fd2 extends C101820nt3 {
+
+    /* renamed from: d */
+    public String f183107d;
+
+    /* renamed from: e */
+    public x55 f183108e;
+
+    /* renamed from: f */
+    public y55 f183109f;
+
+    /* renamed from: g */
+    public z55 f183110g;
+
+    public boolean compareContent(C47465a aVar) {
+        if (aVar == null || !(aVar instanceof C64362fd2)) {
+            return false;
+        }
+        C64362fd2 fd22 = (C64362fd2) aVar;
+        return C46238a.m51546a(this.BaseRequest, fd22.BaseRequest) && C46238a.m51546a(this.f183107d, fd22.f183107d) && C46238a.m51546a(this.f183108e, fd22.f183108e) && C46238a.m51546a(this.f183109f, fd22.f183109f) && C46238a.m51546a(this.f183110g, fd22.f183110g);
+    }
+
+    /* renamed from: op */
+    public final int mo24180op(int i, Object... objArr) {
+        int i2 = 0;
+        if (i == 0) {
+            C53733a aVar = objArr[0];
+            C90417ia iaVar = this.BaseRequest;
+            if (iaVar != null) {
+                aVar.mo74322i(1, iaVar.computeSize());
+                this.BaseRequest.writeFields(aVar);
+            }
+            String str = this.f183107d;
+            if (str != null) {
+                aVar.mo74323j(2, str);
+            }
+            x55 x55 = this.f183108e;
+            if (x55 != null) {
+                aVar.mo74322i(3, x55.computeSize());
+                this.f183108e.writeFields(aVar);
+            }
+            y55 y55 = this.f183109f;
+            if (y55 != null) {
+                aVar.mo74322i(6, y55.computeSize());
+                this.f183109f.writeFields(aVar);
+            }
+            z55 z55 = this.f183110g;
+            if (z55 != null) {
+                aVar.mo74322i(7, z55.computeSize());
+                this.f183110g.writeFields(aVar);
+            }
+            return 0;
+        } else if (i == 1) {
+            C90417ia iaVar2 = this.BaseRequest;
+            if (iaVar2 != null) {
+                i2 = 0 + C52418a.m58682i(1, iaVar2.computeSize());
+            }
+            String str2 = this.f183107d;
+            if (str2 != null) {
+                i2 += C52418a.m58683j(2, str2);
+            }
+            x55 x552 = this.f183108e;
+            if (x552 != null) {
+                i2 += C52418a.m58682i(3, x552.computeSize());
+            }
+            y55 y552 = this.f183109f;
+            if (y552 != null) {
+                i2 += C52418a.m58682i(6, y552.computeSize());
+            }
+            z55 z552 = this.f183110g;
+            return z552 != null ? i2 + C52418a.m58682i(7, z552.computeSize()) : i2;
+        } else if (i == 2) {
+            C102122a aVar2 = new C102122a(objArr[0], C47465a.unknownTagHandler);
+            for (int nextFieldNumber = C47465a.getNextFieldNumber(aVar2); nextFieldNumber > 0; nextFieldNumber = C47465a.getNextFieldNumber(aVar2)) {
+                if (!super.populateBuilderWithField(aVar2, this, nextFieldNumber)) {
+                    aVar2.mo141624b();
+                }
+            }
+            return 0;
+        } else if (i != 3) {
+            return -1;
+        } else {
+            C102122a aVar3 = objArr[0];
+            C64362fd2 fd22 = objArr[1];
+            int intValue = objArr[2].intValue();
+            if (intValue == 1) {
+                LinkedList<byte[]> j = aVar3.mo141632j(intValue);
+                int size = j.size();
+                for (int i3 = 0; i3 < size; i3++) {
+                    byte[] bArr = j.get(i3);
+                    C90417ia iaVar3 = new C90417ia();
+                    if (bArr != null && bArr.length > 0) {
+                        iaVar3.parseFrom(bArr);
+                    }
+                    fd22.BaseRequest = iaVar3;
+                }
+                return 0;
+            } else if (intValue == 2) {
+                fd22.f183107d = aVar3.mo141633k(intValue);
+                return 0;
+            } else if (intValue == 3) {
+                LinkedList<byte[]> j2 = aVar3.mo141632j(intValue);
+                int size2 = j2.size();
+                for (int i4 = 0; i4 < size2; i4++) {
+                    byte[] bArr2 = j2.get(i4);
+                    x55 x553 = new x55();
+                    if (bArr2 != null && bArr2.length > 0) {
+                        x553.parseFrom(bArr2);
+                    }
+                    fd22.f183108e = x553;
+                }
+                return 0;
+            } else if (intValue == 6) {
+                LinkedList<byte[]> j3 = aVar3.mo141632j(intValue);
+                int size3 = j3.size();
+                for (int i5 = 0; i5 < size3; i5++) {
+                    byte[] bArr3 = j3.get(i5);
+                    y55 y553 = new y55();
+                    if (bArr3 != null && bArr3.length > 0) {
+                        y553.parseFrom(bArr3);
+                    }
+                    fd22.f183109f = y553;
+                }
+                return 0;
+            } else if (intValue != 7) {
+                return -1;
+            } else {
+                LinkedList<byte[]> j4 = aVar3.mo141632j(intValue);
+                int size4 = j4.size();
+                for (int i6 = 0; i6 < size4; i6++) {
+                    byte[] bArr4 = j4.get(i6);
+                    z55 z553 = new z55();
+                    if (bArr4 != null && bArr4.length > 0) {
+                        z553.parseFrom(bArr4);
+                    }
+                    fd22.f183110g = z553;
+                }
+                return 0;
+            }
+        }
+    }
+}

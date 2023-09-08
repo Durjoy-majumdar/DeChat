@@ -1,0 +1,57 @@
+package com.tencent.p014mm.p136ui.chatting.viewitems;
+
+import android.content.Context;
+import android.text.TextUtils;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import ck3.C67391b;
+import com.tencent.p014mm.C0966R;
+import com.tencent.p014mm.p136ui.C85875k4;
+import com.tencent.p014mm.plugin.gif.MMAnimateView;
+import com.tencent.p014mm.vfs.C86013q1;
+import di3.C86312j;
+import qz1.C22180d;
+import uo3.C78253a;
+import ww0.C78732i;
+
+/* renamed from: com.tencent.mm.ui.chatting.viewitems.j */
+public class C74070j implements C78253a.C78262i {
+
+    /* renamed from: a */
+    public final /* synthetic */ C67391b f217380a;
+
+    /* renamed from: b */
+    public final /* synthetic */ String f217381b;
+
+    public C74070j(C74023i iVar, C67391b bVar, String str) {
+        this.f217380a = bVar;
+        this.f217381b = str;
+    }
+
+    /* renamed from: a */
+    public View mo103146a(Context context, MenuItem menuItem) {
+        int itemId = menuItem.getItemId();
+        if (itemId != 137 && itemId != 4) {
+            return null;
+        }
+        View inflate = View.inflate(context, C0966R.C0971layout.bnc, (ViewGroup) null);
+        ((TextView) inflate.findViewById(C0966R.C0970id.knx)).setText(this.f217380a.mo91572m().getString(C0966R.string.b_i));
+        TextView textView = (TextView) inflate.findViewById(C0966R.C0970id.exi);
+        String js02 = ((C78732i) C86312j.m106911c(C78732i.class)).js0(this.f217381b);
+        if (TextUtils.isEmpty(js02)) {
+            textView.setVisibility(8);
+        } else {
+            textView.setVisibility(0);
+            textView.setText(js02);
+        }
+        MMAnimateView mMAnimateView = (MMAnimateView) inflate.findViewById(C0966R.C0970id.f15);
+        mMAnimateView.mo129233t(C86013q1.m106433O(C85875k4.m106211z() ? "assets:///fireWork_dark.gif" : "assets:///fireWork_light.gif", 0, -1), "");
+        C22180d dVar = (C22180d) mMAnimateView.getDrawable();
+        if (dVar != null) {
+            dVar.f62710D = 2;
+        }
+        return inflate;
+    }
+}

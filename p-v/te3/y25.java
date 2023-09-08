@@ -1,0 +1,127 @@
+package te3;
+
+import if0.C46238a;
+import java.util.LinkedList;
+import org.json.JSONObject;
+import pe3.C47465a;
+import u14.C52418a;
+import u14.C52419b;
+import v14.C102122a;
+import z14.C53733a;
+
+public class y25 extends C49335eu3 {
+
+    /* renamed from: d */
+    public int f145092d;
+
+    /* renamed from: e */
+    public int f145093e;
+
+    /* renamed from: f */
+    public String f145094f;
+
+    /* renamed from: g */
+    public int f145095g;
+
+    public boolean compareContent(C47465a aVar) {
+        if (aVar == null || !(aVar instanceof y25)) {
+            return false;
+        }
+        y25 y25 = (y25) aVar;
+        return C46238a.m51546a(this.BaseResponse, y25.BaseResponse) && C46238a.m51546a(Integer.valueOf(this.f145092d), Integer.valueOf(y25.f145092d)) && C46238a.m51546a(Integer.valueOf(this.f145093e), Integer.valueOf(y25.f145093e)) && C46238a.m51546a(this.f145094f, y25.f145094f) && C46238a.m51546a(Integer.valueOf(this.f145095g), Integer.valueOf(y25.f145095g));
+    }
+
+    /* renamed from: op */
+    public final int mo24180op(int i, Object... objArr) {
+        int i2 = 0;
+        if (i == 0) {
+            C53733a aVar = objArr[0];
+            if (this.f145094f != null) {
+                C49966ja jaVar = this.BaseResponse;
+                if (jaVar != null) {
+                    aVar.mo74322i(1, jaVar.computeSize());
+                    this.BaseResponse.writeFields(aVar);
+                }
+                aVar.mo74318e(2, this.f145092d);
+                aVar.mo74318e(3, this.f145093e);
+                String str = this.f145094f;
+                if (str != null) {
+                    aVar.mo74323j(4, str);
+                }
+                aVar.mo74318e(5, this.f145095g);
+                return 0;
+            }
+            throw new C52419b("Not all required fields were included: Json");
+        } else if (i == 1) {
+            C49966ja jaVar2 = this.BaseResponse;
+            if (jaVar2 != null) {
+                i2 = 0 + C52418a.m58682i(1, jaVar2.computeSize());
+            }
+            int e = i2 + C52418a.m58678e(2, this.f145092d) + C52418a.m58678e(3, this.f145093e);
+            String str2 = this.f145094f;
+            if (str2 != null) {
+                e += C52418a.m58683j(4, str2);
+            }
+            return e + C52418a.m58678e(5, this.f145095g);
+        } else if (i == 2) {
+            C102122a aVar2 = new C102122a(objArr[0], C47465a.unknownTagHandler);
+            for (int nextFieldNumber = C47465a.getNextFieldNumber(aVar2); nextFieldNumber > 0; nextFieldNumber = C47465a.getNextFieldNumber(aVar2)) {
+                if (!super.populateBuilderWithField(aVar2, this, nextFieldNumber)) {
+                    aVar2.mo141624b();
+                }
+            }
+            if (this.f145094f != null) {
+                return 0;
+            }
+            throw new C52419b("Not all required fields were included: Json");
+        } else if (i != 3) {
+            return -1;
+        } else {
+            C102122a aVar3 = objArr[0];
+            y25 y25 = objArr[1];
+            int intValue = objArr[2].intValue();
+            if (intValue == 1) {
+                LinkedList<byte[]> j = aVar3.mo141632j(intValue);
+                int size = j.size();
+                for (int i3 = 0; i3 < size; i3++) {
+                    byte[] bArr = j.get(i3);
+                    C49966ja jaVar3 = new C49966ja();
+                    if (bArr != null && bArr.length > 0) {
+                        jaVar3.parseFrom(bArr);
+                    }
+                    y25.BaseResponse = jaVar3;
+                }
+                return 0;
+            } else if (intValue == 2) {
+                y25.f145092d = aVar3.mo141629g(intValue);
+                return 0;
+            } else if (intValue == 3) {
+                y25.f145093e = aVar3.mo141629g(intValue);
+                return 0;
+            } else if (intValue == 4) {
+                y25.f145094f = aVar3.mo141633k(intValue);
+                return 0;
+            } else if (intValue != 5) {
+                return -1;
+            } else {
+                y25.f145095g = aVar3.mo141629g(intValue);
+                return 0;
+            }
+        }
+    }
+
+    public Object toJSON() {
+        JSONObject jSONObject = new JSONObject();
+        try {
+            C49966ja jaVar = this.BaseResponse;
+            C46238a.C46239a aVar = C46238a.f124644a;
+            aVar.mo71655d(jSONObject, "BaseResponse", jaVar, false);
+            aVar.mo71655d(jSONObject, "UpdateCode", Integer.valueOf(this.f145092d), false);
+            aVar.mo71655d(jSONObject, "Offset", Integer.valueOf(this.f145093e), false);
+            aVar.mo71655d(jSONObject, "Json", this.f145094f, false);
+            aVar.mo71655d(jSONObject, "ResultType", Integer.valueOf(this.f145095g), false);
+        } catch (Exception unused) {
+        }
+        return jSONObject;
+    }
+}

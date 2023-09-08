@@ -1,0 +1,180 @@
+package com.tencent.liteav.videobase.videobase;
+
+import com.tencent.mars.cdn.CdnLogic;
+import java.util.HashMap;
+import java.util.Map;
+
+/* renamed from: com.tencent.liteav.videobase.videobase.h */
+public final class C17263h {
+
+    /* renamed from: a */
+    private static final Map<C17268a, Integer> f46668a = new HashMap<C17268a, Integer>() {
+        {
+            put(C17268a.ERR_CODE_NONE, 0);
+            put(C17268a.ERR_VIDEO_CAPTURE_EGL_CORE_CREATE_FAILED, -1301);
+            put(C17268a.ERR_VIDEO_CAPTURE_OPENGL_ERROR, -1301);
+            put(C17268a.ERR_VIDEO_CAPTURE_CAMERA_INVALID_DEVICE, -1301);
+            put(C17268a.ERR_VIDEO_CAPTURE_SCREEN_CAPTURE_START_FAILED, -1308);
+            put(C17268a.ERR_VIDEO_CAPTURE_SCREEN_UNSUPPORTED, -1309);
+            put(C17268a.ERR_VIDEO_CAPTURE_SCREEN_UNAUTHORIZED, -1308);
+            put(C17268a.ERR_VIDEO_ENCODE_FATALERROR, -1303);
+            put(C17268a.ERR_VIDEO_ENCODE_FAIL, -1303);
+            put(C17268a.ERR_VIDEO_NO_AVAILABLE_HEVC_DECODERS, -2304);
+        }
+    };
+
+    /* renamed from: b */
+    private static final Map<C17270c, Integer> f46669b = new HashMap<C17270c, Integer>() {
+        {
+            put(C17270c.WARNING_VIDEO_ENCODE_EGL_CORE_CREATE_FAILED, 1103);
+            put(C17270c.WARNING_VIDEO_ENCODE_START_FAILED_INSUFFICIENT_RESOURCE, 1103);
+            put(C17270c.WARNING_VIDEO_ENCODE_START_FAILED, 1103);
+            put(C17270c.WARNING_VIDEO_ENCODE_SWAP_BUFFER, 1103);
+            put(C17270c.WARNING_VIDEO_RENDER_EGL_CORE_CREATE_FAILED, 2110);
+            put(C17270c.WARNING_VIDEO_RENDER_EGL_CORE_DESTROY_FAILED, 2110);
+            put(C17270c.WARNING_VIDEO_RENDER_SWAP_BUFFER, 2110);
+            put(C17270c.WARNING_VIDEO_DECODE_EGL_CORE_CREATE_FAILED, 2106);
+            put(C17270c.WARNING_VIDEO_DECODE_START_FAILED_ILLEGAL_ARGUMENT, 2106);
+            put(C17270c.WARNING_VIDEO_DECODE_START_FAILED_ILLEGAL_STATE, 2106);
+            put(C17270c.WARNING_VIDEO_DECODE_START_FAILED_INSUFFICIENT_RESOURCE, 2106);
+            put(C17270c.WARNING_VIDEO_DECODE_START_FAILED_OUT_OF_MEMORY, 2106);
+            put(C17270c.WARNING_VIDEO_DECODE_START_FAILED, 2106);
+            put(C17270c.WARNING_VIDEO_DECODE_RESTART_WHEN_DECODE_ERROR, 2101);
+            put(C17270c.WARNING_VIDEO_DECODE_ERROR_NOT_SUPPORT_PIXEL_FORMAT_TYPE, 2101);
+            put(C17270c.WARNING_VIDEO_DECODE_FATAL_ERROR, 2101);
+        }
+    };
+
+    /* renamed from: c */
+    private static final Map<C17269b, Integer> f46670c = new HashMap<C17269b, Integer>() {
+        {
+            put(C17269b.EVT_VIDEO_DECODE_HW_TO_SW_DECODE_COST_TOO_HIGH, 2108);
+            put(C17269b.EVT_VIDEO_DECODE_HW_TO_SW_REMOTE_VIDEO_ENABLE_RPS, 2108);
+            put(C17269b.EVT_VIDEO_DECODE_HW_TO_SW_MEDIACODEC_NOT_WORK, 2108);
+        }
+    };
+
+    /* renamed from: d */
+    private static final Map<C17269b, Integer> f46671d = new HashMap<C17269b, Integer>() {
+        {
+            put(C17269b.EVT_VIDEO_DECODE_FIRST_FRAME_DECODED, 10000);
+            put(C17269b.EVT_VIDEO_RENDER_FIRST_FRAME_ON_VIEW, 10004);
+            put(C17269b.EVT_VIDEO_RENDER_FIRST_FRAME, 10001);
+            put(C17269b.EVT_VIDEO_DECODE_TYPE_CHANGE, 10002);
+            put(C17269b.EVT_VIDEO_RENDER_RESOLUTION_CHANGE, 10003);
+            put(C17269b.EVT_VIDEO_CAPTURE_FIRST_FRAME, 20000);
+            put(C17269b.EVT_VIDEO_CAPTURE_CAMERA_START_SUCCESS, 30001);
+            put(C17269b.EVT_VIDEO_CAPTURE_SCREEN_CAPTURE_START_SUCCESS, 30002);
+            put(C17269b.EVT_VIDEO_CAPTURE_SCREEN_CAPTURE_STOP_SUCCESS, 30003);
+            put(C17269b.EVT_VIDEO_CAPTURE_SCREEN_CAPTURE_INTERRUPTED, Integer.valueOf(CdnLogic.PCDNAppID.kStoriesVideo));
+            put(C17269b.EVT_VIDEO_CAPTURE_SCREEN_CAPTURE_RESUME, 30005);
+            put(C17269b.EVT_VIDEO_ENCODE_START_SUCCESS, 40001);
+        }
+    };
+
+    /* renamed from: com.tencent.liteav.videobase.videobase.h$a */
+    public enum C17268a {
+        ERR_CODE_NONE,
+        ERR_VIDEO_CAPTURE_EGL_CORE_CREATE_FAILED,
+        ERR_VIDEO_CAPTURE_OPENGL_ERROR,
+        ERR_VIDEO_CAPTURE_CAMERA_INVALID_DEVICE,
+        ERR_VIDEO_CAPTURE_SCREEN_CAPTURE_START_FAILED,
+        ERR_VIDEO_CAPTURE_SCREEN_UNAUTHORIZED,
+        ERR_VIDEO_CAPTURE_SCREEN_UNSUPPORTED,
+        ERR_VIDEO_ENCODE_FATALERROR,
+        ERR_VIDEO_ENCODE_FAIL,
+        ERR_VIDEO_NO_AVAILABLE_HEVC_DECODERS
+    }
+
+    /* renamed from: com.tencent.liteav.videobase.videobase.h$b */
+    public enum C17269b {
+        EVT_CODE_NONE,
+        EVT_VIDEO_DECODE_HW_TO_SW_DECODE_COST_TOO_HIGH,
+        EVT_VIDEO_DECODE_HW_TO_SW_REMOTE_VIDEO_ENABLE_RPS,
+        EVT_VIDEO_DECODE_HW_TO_SW_MEDIACODEC_NOT_WORK,
+        EVT_VIDEO_DECODE_FIRST_FRAME_DECODED,
+        EVT_VIDEO_RENDER_FIRST_FRAME,
+        EVT_VIDEO_DECODE_TYPE_CHANGE,
+        EVT_VIDEO_RENDER_RESOLUTION_CHANGE,
+        EVT_VIDEO_RENDER_FIRST_FRAME_ON_VIEW,
+        EVT_VIDEO_CAPTURE_FIRST_FRAME,
+        EVT_VIDEO_CAPTURE_CAMERA_START_SUCCESS,
+        EVT_VIDEO_CAPTURE_SCREEN_CAPTURE_START_SUCCESS,
+        EVT_VIDEO_CAPTURE_SCREEN_CAPTURE_STOP_SUCCESS,
+        EVT_VIDEO_CAPTURE_SCREEN_CAPTURE_INTERRUPTED,
+        EVT_VIDEO_CAPTURE_SCREEN_CAPTURE_RESUME,
+        EVT_VIDEO_ENCODE_START_SUCCESS,
+        EVT_VIDEO_CAPTURE_VIRTUAL_CAMERA_SIZE_CHANGE_SUCCESS,
+        EVT_VIDEO_CAPTURE_VIRTUAL_CAMERA_START_SUCCESS,
+        EVT_VIDEO_CAPTURE_VIRTUAL_CAMERA_STOP_SUCCESS,
+        EVT_VIDEO_PREPROCESS_FACE_RECOGNIZE_SUCESS,
+        EVT_VIDEO_PREPROCESS_FACE_RECOGNIZE_FAILED,
+        EVT_VIDEO_PREPROCESS_COSMETIC_FIRST_USE,
+        EVT_VIDEO_ENCODE_STOP_SUCCESS,
+        EVT_VIDEO_ENCODE_SW_TO_HW_CPU_USAGE,
+        EVT_VIDEO_ENCODE_HW_TO_SW_MEDIACODEC_NOT_WORK,
+        EVT_VIDEO_CONSUMER_RECEIVE_FIRST_FRAME,
+        EVT_VIDEO_DECODE_START_DECODE_FIRST_FRAME,
+        EVT_VIDEO_DECODE_START_SUCCESS,
+        EVT_VIDEO_DECODE_SW_TO_HW_REMOTE_VIDEO_DISABLE_RPS
+    }
+
+    /* renamed from: com.tencent.liteav.videobase.videobase.h$c */
+    public enum C17270c {
+        WARNING_VIDEO_ENCODE_EGL_CORE_CREATE_FAILED,
+        WARNING_VIDEO_ENCODE_START_FAILED_INSUFFICIENT_RESOURCE,
+        WARNING_VIDEO_ENCODE_START_FAILED,
+        WARNING_VIDEO_ENCODE_SWAP_BUFFER,
+        WARNING_VIDEO_RENDER_EGL_CORE_CREATE_FAILED,
+        WARNING_VIDEO_RENDER_EGL_CORE_DESTROY_FAILED,
+        WARNING_VIDEO_RENDER_SWAP_BUFFER,
+        WARNING_VIDEO_DECODE_EGL_CORE_CREATE_FAILED,
+        WARNING_VIDEO_DECODE_START_FAILED_ILLEGAL_ARGUMENT,
+        WARNING_VIDEO_DECODE_START_FAILED_ILLEGAL_STATE,
+        WARNING_VIDEO_DECODE_START_FAILED_INSUFFICIENT_RESOURCE,
+        WARNING_VIDEO_DECODE_START_FAILED_OUT_OF_MEMORY,
+        WARNING_VIDEO_DECODE_START_FAILED,
+        WARNING_VIDEO_DECODE_RESTART_WHEN_DECODE_ERROR,
+        WARNING_VIDEO_DECODE_ERROR_NOT_SUPPORT_PIXEL_FORMAT_TYPE,
+        WARNING_VIDEO_DECODE_FATAL_ERROR,
+        WARNING_VIDEO_DECODE_CACHE_EXCEEDED,
+        WARNING_VIDEO_DECODE_ABNORMAL,
+        WARNING_VIDEO_DECODE_EGL_CORE_DESTROY_FAILED
+    }
+
+    /* renamed from: a */
+    public static int m17162a(C17268a aVar) {
+        Map<C17268a, Integer> map = f46668a;
+        if (map.containsKey(aVar)) {
+            return map.get(aVar).intValue();
+        }
+        return 0;
+    }
+
+    /* renamed from: b */
+    public static boolean m17165b(C17269b bVar) {
+        return f46670c.containsKey(bVar);
+    }
+
+    /* renamed from: a */
+    public static int m17164a(C17270c cVar) {
+        Map<C17270c, Integer> map = f46669b;
+        if (map.containsKey(cVar)) {
+            return map.get(cVar).intValue();
+        }
+        return 0;
+    }
+
+    /* renamed from: a */
+    public static int m17163a(C17269b bVar) {
+        Map<C17269b, Integer> map = f46670c;
+        if (map.containsKey(bVar)) {
+            return map.get(bVar).intValue();
+        }
+        Map<C17269b, Integer> map2 = f46671d;
+        if (map2.containsKey(bVar)) {
+            return map2.get(bVar).intValue();
+        }
+        return 0;
+    }
+}

@@ -1,0 +1,17 @@
+package com.tencent.p014mm.console;
+
+import android.app.ActivityManager;
+import android.content.Intent;
+import com.tencent.p014mm.sdk.platformtools.Log;
+import com.tencent.p014mm.sdk.platformtools.MMApplicationContext;
+import com.tencent.tinker.loader.hotplug.EnvConsts;
+
+/* renamed from: com.tencent.mm.console.Shell$$d1 */
+public class Shell$$d1 implements Shell$$s1 {
+    /* renamed from: a */
+    public void mo56303a(Intent intent) {
+        for (ActivityManager.AppTask taskInfo : ((ActivityManager) MMApplicationContext.getContext().getSystemService(EnvConsts.ACTIVITY_MANAGER_SRVNAME)).getAppTasks()) {
+            Log.m105919d("Yves-test", "%s", taskInfo.getTaskInfo());
+        }
+    }
+}

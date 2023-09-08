@@ -1,0 +1,22 @@
+package wz0;
+
+/* renamed from: wz0.c */
+public enum C53247c {
+    CARDCODEREFRESHACTION_UNSHOWN_TIMEOUT(0),
+    CARDCODEREFRESHACTION_SHOWING_TIMEOUT(1),
+    CARDCODEREFRESHACTION_SNAPSHOT(2),
+    CARDCODEREFRESHACTION_DOREFRESH(3),
+    CARDCODEREFRESHACTION_ENTERFOREGROUND(4),
+    CARDCODEREFRESHACTION_BANCODE(5),
+    CARDCODEREFRESHACTION_UPDATECHANGE(6),
+    CARDCODEREFRESHACTION_ENTERCHANGE(7);
+    
+
+    /* renamed from: d */
+    public int f148589d;
+
+    /* access modifiers changed from: public */
+    C53247c(int i) {
+        this.f148589d = i;
+    }
+}

@@ -1,0 +1,22 @@
+package go1;
+
+/* renamed from: go1.a */
+public enum C8366a {
+    PLAYLIST_ON_TOPIC,
+    AD_HARD,
+    AD_HOT,
+    AD_COMMON,
+    SHOPPING_CART,
+    RED_PACK_COVER,
+    LIVE_OPEN,
+    LIVE_NOTICE,
+    ORIGIN_AUTHOR_TEMPLATE,
+    RINGTONE,
+    CREATION_BY_SAME_TEMPLATE,
+    HOT_SPOT,
+    HOT_SEARCH,
+    MUSIC_TOPIC,
+    PLAYLIST,
+    JUMPER,
+    NONE
+}

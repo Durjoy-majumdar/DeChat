@@ -1,0 +1,23 @@
+package com.tencent.p014mm.p136ui.chatting.component;
+
+import android.content.DialogInterface;
+import di3.C86312j;
+import p447aw.C103918d;
+
+/* renamed from: com.tencent.mm.ui.chatting.component.FootComponent$$c */
+public final /* synthetic */ class FootComponent$$c implements DialogInterface.OnClickListener {
+
+    /* renamed from: d */
+    public final /* synthetic */ FootComponent f82811d;
+
+    public /* synthetic */ FootComponent$$c(FootComponent footComponent) {
+        this.f82811d = footComponent;
+    }
+
+    public final void onClick(DialogInterface dialogInterface, int i) {
+        FootComponent footComponent = this.f82811d;
+        footComponent.getClass();
+        dialogInterface.dismiss();
+        ((C103918d) C86312j.m106911c(C103918d.class)).mo125783j7(footComponent.f215752d.mo91565f());
+    }
+}

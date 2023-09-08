@@ -1,0 +1,11 @@
+package p172io.flutter.plugins.webviewflutter;
+
+import p172io.flutter.plugins.webviewflutter.GeneratedAndroidWebView;
+import p172io.flutter.plugins.webviewflutter.WebViewClientHostApiImpl;
+
+/* renamed from: io.flutter.plugins.webviewflutter.WebViewClientHostApiImpl$WebViewClientCompatImpl$$a */
+public final /* synthetic */ class WebViewClientHostApiImpl$WebViewClientCompatImpl$$a implements GeneratedAndroidWebView.WebViewClientFlutterApi.Reply {
+    public final void reply(Object obj) {
+        WebViewClientHostApiImpl.WebViewClientCompatImpl.lambda$onPageFinished$1((Void) obj);
+    }
+}

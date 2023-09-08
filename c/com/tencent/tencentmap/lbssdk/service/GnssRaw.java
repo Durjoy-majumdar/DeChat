@@ -1,0 +1,47 @@
+package com.tencent.tencentmap.lbssdk.service;
+
+public class GnssRaw {
+    public double elapsedRealtime;
+    public double mAccumulatedDeltaRangeMeters;
+    public int mAccumulatedDeltaRangeState;
+    public double mAccumulatedDeltaRangeUncertaintyMeters;
+    public double mAltitude = 0.0d;
+    public double mAutomaticGainControlLevelInDb;
+    public float mBearing = 0.0f;
+    public float mBearingAccuracyDegrees = 0.0f;
+    public double mBiasNanos;
+    public double mBiasUncertaintyNanos;
+    public long mCarrierCycles;
+    public float mCarrierFrequencyHz;
+    public double mCarrierPhase;
+    public double mCarrierPhaseUncertainty;
+    public double mCn0DbHz;
+    public int mConstellationType;
+    public double mDriftNanosPerSecond;
+    public double mDriftUncertaintyNanosPerSecond;
+    public long mElapsedRealtimeNanos = 0;
+    public int mEndFlag;
+    public int mFlags;
+    public long mFullBiasNanos;
+    public int mHardwareClockDiscontinuityCount;
+    public float mHorizontalAccuracyMeters = 0.0f;
+    public double mLatitude = 0.0d;
+    public int mLeapSecond;
+    public double mLongitude = 0.0d;
+    public int mMultipathIndicator;
+    public int mProvider = -1;
+    public double mPseudorangeRateMetersPerSecond;
+    public double mPseudorangeRateUncertaintyMetersPerSecond;
+    public long mReceivedSvTimeNanos;
+    public long mReceivedSvTimeUncertaintyNanos;
+    public double mSnrInDb;
+    public float mSpeed = 0.0f;
+    public float mSpeedAccuracyMetersPerSecond = 0.0f;
+    public int mState;
+    public int mSvid;
+    public long mTime = 0;
+    public long mTimeNanos;
+    public double mTimeOffsetNanos;
+    public double mTimeUncertaintyNanos;
+    public float mVerticalAccuracyMeters = 0.0f;
+}

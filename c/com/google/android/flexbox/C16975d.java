@@ -1,0 +1,11 @@
+package com.google.android.flexbox;
+
+/* renamed from: com.google.android.flexbox.d */
+public final class C16975d {
+
+    /* renamed from: a */
+    public static final int[] f45970a = {2130968652, 2130968653, 2130968966, 2130968967, 2130968968, 2130969090, 2130969091, 2130969248, 2130969460, 2130969648, 2130969649, 2130969650};
+
+    /* renamed from: b */
+    public static final int[] f45971b = {2130969274, 2130969327, 2130969328, 2130969329, 2130969339, 2130969340, 2130969341, 2130969342, 2130969344, 2130969350};
+}

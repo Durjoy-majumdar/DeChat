@@ -1,0 +1,61 @@
+package cn1;
+
+import an1.C0091d;
+import android.content.Context;
+import android.view.View;
+import androidx.recyclerview.widget.RecyclerView;
+import cm1.C0740i2;
+import com.tencent.p014mm.plugin.finder.model.BaseFinderFeed;
+import com.tencent.p014mm.view.recyclerview.WxRecyclerAdapter;
+import er1.C58739j4;
+import gy3.C87412m;
+import jq3.C60898l;
+import jq3.C60905o;
+import ok1.C62042e;
+import qo3.C77407n;
+import sx3.C110818d0;
+
+/* renamed from: cn1.h */
+public final class C0839h implements C60898l.C9503c<C60905o> {
+
+    /* renamed from: d */
+    public final /* synthetic */ C0091d f1979d;
+
+    /* renamed from: e */
+    public final /* synthetic */ C0821e f1980e;
+
+    public C0839h(C0091d dVar, C0821e eVar) {
+        this.f1979d = dVar;
+        this.f1980e = eVar;
+    }
+
+    /* renamed from: n */
+    public boolean mo759n(RecyclerView.C16613e eVar, View view, int i, RecyclerView.C16631z zVar) {
+        C60905o oVar = (C60905o) zVar;
+        C87412m.m108594g(eVar, "adapter");
+        C87412m.m108594g(view, "view");
+        C87412m.m108594g(oVar, "holder");
+        int c6 = ((WxRecyclerAdapter) eVar).mo85796c6();
+        if (i < c6) {
+            return true;
+        }
+        int i2 = i - c6;
+        C0740i2 i2Var = (C0740i2) C110818d0.m150917O(this.f1979d.f529e, i2);
+        if (!(i2Var instanceof BaseFinderFeed)) {
+            return true;
+        }
+        BaseFinderFeed baseFinderFeed = (BaseFinderFeed) i2Var;
+        if (!C58739j4.f168176a.mo83686O(baseFinderFeed)) {
+            return true;
+        }
+        C62042e eVar2 = C62042e.f176370a;
+        Context context = oVar.f173499A;
+        C87412m.m108593f(context, "holder.context");
+        C77407n B0 = eVar2.mo86992B0(context, baseFinderFeed, 1005, this.f1980e.f1928i, new C0835g(this.f1979d, i2, i2Var, eVar, i));
+        if (B0 == null) {
+            return true;
+        }
+        B0.mo107573q();
+        return true;
+    }
+}

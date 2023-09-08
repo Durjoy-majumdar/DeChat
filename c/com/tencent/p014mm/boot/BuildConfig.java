@@ -1,0 +1,54 @@
+package com.tencent.p014mm.boot;
+
+/* renamed from: com.tencent.mm.boot.BuildConfig */
+public final class BuildConfig {
+    public static final String AAB_FLAG = "null";
+    public static final String APPLICATION_ID = "com.tencent.mm";
+    public static final String BUILD_RAND_ID = "1679544538056_3671945522298622058";
+    public static final String BUILD_TAG = "Android_Wechat_RELEASE #20308";
+    public static final String BUILD_TYPE = "release";
+    public static final String CLIENT_VERSION_ARM64 = "0x28002235";
+    public static final String CLIENT_VERSION_ARMEABI = "0x28002234";
+    public static final String COMMAND = "null";
+    public static final boolean DEBUG = false;
+    public static final boolean ENABLE_DEVTOOLS = false;
+    public static final boolean ENABLE_FPS_ANALYSE = false;
+    public static final boolean ENABLE_LIVE_SDK_DEBUG = false;
+    public static final boolean ENABLE_MATRIX = true;
+    public static final boolean ENABLE_MATRIX_MEMORY_HOOK = false;
+    public static final boolean ENABLE_MATRIX_MEMORY_TRIGGERS = false;
+    public static final boolean ENABLE_MATRIX_OPENGL_HOOK = false;
+    public static final boolean ENABLE_MATRIX_PTHREAD_HOOK = false;
+    public static final boolean ENABLE_MATRIX_SILENCE_ANALYSE = false;
+    public static final boolean ENABLE_MATRIX_TRACE = false;
+    public static final boolean ENABLE_PAYTEST = false;
+    public static final boolean ENABLE_SYSTRACE = false;
+    public static final boolean ENABLE_UI_TOOL = false;
+    public static final boolean ENABLE_XPOSED_HOOK = false;
+    public static final boolean EX_DEVICE_LOGIN = false;
+    public static final String FEATURE_ID = "";
+    public static final String HOSTNAME = "kevinfzou1670204119168-0";
+    public static final boolean IS_FLAVOR_BLUE = false;
+    public static final boolean IS_FLAVOR_PURPLE = false;
+    public static final boolean IS_FLAVOR_P_ALPHA = false;
+    public static final boolean IS_FLAVOR_RED = false;
+    public static final boolean IS_UAT = false;
+    public static final String KINDA_DEFAULT = "default";
+    public static final boolean MAAS_IN_PKG = false;
+    public static final String MATRIX_VERSION = "2.0.8-1491";
+    public static final boolean OBB_ENABLED = false;
+    public static final String OPEN_SDK_VERSION = "671097396";
+    public static final String OVERRIDE_VERSION_NAME = "";
+    public static final String OWNER = "amm_code_helper";
+    public static final boolean PATCH_ENABLED = true;
+    public static final boolean PRE_RELEASE = false;
+    public static final boolean RECOVERY_ENABLED = true;
+    public static final boolean REDESIGN_ENTRANCE = false;
+    public static final String REV = "4665cadd9f442112adf63e89e0f111f511a9831e";
+    public static final String SVNPATH = "trunks/2023-03@git";
+    public static final String TIME = "2023-03-23 12:08:58";
+    public static final int TINKER_FLAG = 7;
+    public static final String TINKER_VERSION = "1.9.14.25.2-dev-94";
+    public static final int VERSION_CODE = 2340;
+    public static final String VERSION_NAME = "8.0.34";
+}
